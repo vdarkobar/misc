@@ -1,3 +1,15 @@
+#Aliases/Shortcuts for Docker Commands
+#    dstopcont SERVICENAME - stop container
+#    dstopall - stop all running containers
+#    docdf - storage used by docker
+#    docps - list of all containers
+#Aliases/Shortcuts for Docker Compose Commands
+#    dcup2 - start Traefik 2 docker compose stack
+#    dcdown2 - stop the entire Traefik 2 docker compose stack
+#    dcrec2 SERVICENAME - recreate a specific service from Traefik 2 docker copose
+#    dcrestart2 SERVICENAME - restart a specific container
+#    dcpull2 - update all container images
+
 # DOCKER
 alias dstopcont='sudo docker stop $(docker ps -a -q)'
 alias dstopall='sudo docker stop $(sudo docker ps -aq)'
