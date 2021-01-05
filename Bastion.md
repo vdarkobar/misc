@@ -5,8 +5,9 @@
   <a href="https://github.com/vdarkobar/Home_Lab">Home</a>
 </p>  
   
-*Install <a href="https://www.debian.org/index.html">Debian</a> VM (1CPU/1GBRAM/8GBHDD), add SSH Server. Dont set root password during installation (created user will have sudo privilages).*
-
+*Download <a href="https://www.debian.org/index.html">Debian</a> and create Proxmox VM: (1CPU/1GBRAM/8GBHDD).*  
+*Add SSH Server. Dont set root password during installation (created user will have sudo privilages).*  
+  
 ### Update, install packages and reboot:
 ```
 sudo apt update && sudo apt upgrade -y && \
