@@ -124,6 +124,12 @@ config file : ~/.google_authenticator
 sudo apt-get install libpam-google-authenticator
 google-authenticator -d -f -t -r 3 -R 30 -W
 ```
+```
+Options used: 
+    disallow reuse of the same token twice, 
+    issue time-based rather than counter-based codes, 
+    limit the user to a maximum of three logins every 30 seconds.
+```
   
 Output > # QR code + backup codes 
   
