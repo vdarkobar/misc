@@ -20,7 +20,7 @@ sudo apt install -y \
 sudo apt clean && sudo apt autoremove && sudo reboot
 ```
   
-### Lock SSH:
+### SSH
 ```
 sudo nano /etc/ssh/sshd_config
 ```	    
