@@ -7,6 +7,7 @@
   
 *swich shell (bash) if command not working*  
   
+### Docker:
 ```
 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 ```
@@ -22,25 +23,7 @@ sudo docker -v
 sudo docker ps -a
 ```
   
-#### Create necessary Docker networks:  
-```
-sudo docker network create traefik
-```
-<!--- Commented out
-*option: custom Docker networks (specify the gateway and subnet to use).*
-```
-sudo docker network create --gateway 192.168.90.1 --subnet 192.168.90.0/24 traefik  
-```
-*option: set static ip to your service(s).*
-```
-# ...
-    networks:
-      traefik:
-        ipv4_address: 192.168.90.254
-```
---->
-#### Securing Docker:  
-
+Securing Docker:  
 <p align="center">
   <b>Do no add user to docker group (sudo usermod -aG docker $USER && logout).</b><br>
   <b>Do not mess with the ownership of Docker Socket (/var/run/docker.sock in Linux)</b><br>
