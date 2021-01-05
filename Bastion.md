@@ -20,7 +20,7 @@ sudo apt install -y \
 sudo apt clean && sudo apt autoremove && sudo reboot
 ```
   
-### SSH
+### SSH:
 ```
 sudo nano /etc/ssh/sshd_config
 ```	    
@@ -32,7 +32,7 @@ AllowUsers <username>					# adjust <username>
 sudo systemctl restart ssh
 ```
 
-### Fail2Ban
+### Fail2Ban:
 ```
 sudo systemctl status fail2ban
 sudo fail2ban-client status
