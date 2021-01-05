@@ -2,7 +2,7 @@
 ## Create Bastion Server
   
 <p align="left">
-  <a href="https://github.com/vdarkobar/Home_Lab">Home</a>
+  <a href="https://github.com/vdarkobar/Home_Lab#proxmox">Home</a>
 </p>  
   
 *Download <a href="https://www.debian.org/index.html">Debian Server</a> and create Proxmox VM: (1CPU/1GBRAM/8GBHDD).  
