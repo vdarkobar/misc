@@ -1,4 +1,4 @@
-# <a href="https://www.docker.com/">Docker</a>:  
+# <a href="https://www.docker.com/">Docker</a>  
 *swich shell (bash) if command not working*  
   
 ```
@@ -15,6 +15,7 @@ sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo docker -v
 sudo docker ps -a
 ```
+  
 #### Create necessary Docker networks:  
 ```
 sudo docker network create traefik
