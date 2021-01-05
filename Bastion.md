@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Lab">Home</a>
 </p>  
   
-*Install Debian VM (1CPU/1GBRAM/8GBHDD), add SSH Server. Dont set root password during installation (created user will have sudo privilages).*
+*Install <a href="https://www.debian.org/index.html">Debian</a> VM (1CPU/1GBRAM/8GBHDD), add SSH Server. Dont set root password during installation (created user will have sudo privilages).*
 
 ### Update, install packages and reboot:
 ```
