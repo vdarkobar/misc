@@ -22,7 +22,7 @@ Write changes to the disk > Yes > Continue
 ```
 - To add free space to Cloned VM: VM > Hardware > Hard Disk > Resize disk  
   
-Login to Bastion and copy ID to VM:
+### Login to Bastion and copy ID to VM:
 ```
 ssh-copy-id -i ~/.ssh/id_ecdsa.pub user@ip
 ```
@@ -53,7 +53,7 @@ sudo apt install -y \
   software-properties-common
 ```
   
-### Fish
+### Fish:
 ```
 echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_10/ /' | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list
 curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
