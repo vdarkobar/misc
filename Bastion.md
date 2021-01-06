@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
 </p>  
   
-*Download <a href="https://www.debian.org/index.html">Debian Server</a> and create Proxmox VM: (1CPU/1GBRAM/8GBHDD).  
+*Download <a href="https://www.debian.org/index.html">Debian</a> and create Proxmox VM: (1CPU/1GBRAM/8GBHDD).  
 Add SSH Server. Dont set root password during installation (created user will have sudo privilages).*  
   
 ### Update, install packages and reboot:
