@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
 </p>  
   
-*Create Proxmox VM: (1CPU/1GBRAM/8GBHDD). Add SSH Server. 
+*Create <a href="https://github.com/vdarkobar/shared/blob/main/Proxmox.md#proxmox">Proxmox</a> VM: (1CPU/1GBRAM/8GBHDD). Add SSH Server. 
 Dont set root password during installation (created user will have sudo privilages).*  
   
 ### Update, install packages and reboot:
