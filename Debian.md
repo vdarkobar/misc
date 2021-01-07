@@ -7,8 +7,8 @@
   
 - Install Debian VM (2CPU/2GBRAM/8GBHDD), add SSH Server  
 - Dont set root password during installation (created user will have sudo privilages)  
-- For automatic disk resize to work create VM without SWAP Partition
-during insttal proces:
+- For automatic disk resize to work create VM without SWAP Partition during insttal proces:
+
 ```
 Partition disks > Manual > Continue
 Select disk > SCSI3 QEMU HARDDISK > Continue
@@ -20,6 +20,7 @@ Finish partitioning and write changes to the disk > Continue
 Return to the partitioning menu > No > Continue
 Write changes to the disk > Yes > Continue
 ```
+  
 - To add free space to Cloned VM: VM > Hardware > Hard Disk > Resize disk  
   
 ### Login to Bastion and copy ID to VM:
@@ -30,7 +31,11 @@ Test: SSH to VM:
 ```
 ssh user@ip
 ```
-  
+Replace content od the .bashrc file with this one:
+```
+<a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a>
+```
+ 
 ### Update and install packages: 
 ```
 sudo apt update && \
@@ -40,33 +45,18 @@ sudo apt install -y \
   ufw \
   wget \
   curl \
-  figlet \
   fail2ban \
   cloud-init \
+  python3-pip \
   gnupg-agent \
   apache2-utils \
+  bash-completion \
   fonts-powerline \
   ca-certificates \
   qemu-guest-agent \
   apt-transport-https \
   cloud-initramfs-growroot \
   software-properties-common
-```
-  
-### Fish:
-```
-echo 'deb http://download.opensuse.org/repositories/shells:/fish:/release:/3/Debian_10/ /' | sudo tee /etc/apt/sources.list.d/shells:fish:release:3.list
-curl -fsSL https://download.opensuse.org/repositories/shells:fish:release:3/Debian_10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/shells_fish_release_3.gpg > /dev/null
-sudo apt update
-sudo apt install fish
-
-sudo usermod --shell $(which fish) $USER
-
-curl -L https://get.oh-my.fish | fish
-
-omf install bobthefish 
-
-	#Optional: add msg: echo "figlet TEXT" > ~/.config/fish/config.fish
 ```
   
 ### Create swap file:
