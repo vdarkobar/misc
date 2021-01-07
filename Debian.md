@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
 </p>  
   
-- Install Debian VM (2CPU/2GBRAM/8GBHDD), add SSH Server  
+- Install Debian VM (2CPU/2GBRAM/10GBHDD), add SSH Server  
 - Dont set root password during installation (created user will have sudo privilages)  
 - For automatic disk resize to work create VM without SWAP Partition during insttal proces:
 
