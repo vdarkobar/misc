@@ -31,11 +31,9 @@ Test: SSH to VM:
 ```
 ssh user@ip
 ```
-Replace content od the .bashrc file with this one:
+Replace content od the: *~/.bashrc* file with this one: <a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a>. Log out/Log in.
 ```
-<a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a>
-```
- 
+  
 ### Update and install packages: 
 ```
 sudo apt update && \
