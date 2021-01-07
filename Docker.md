@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
 </p>  
   
-*swich shell (bash) if command not working*  
+First add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*
   
 ### Docker:
 ```
