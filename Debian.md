@@ -132,15 +132,7 @@ sudo ufw default allow outgoing
 ```
 ```
 sudo ufw reload
-sudo ufw status
 sudo ufw status numbered
-sudo ufw delete 1                        # or any listed number...
-```
-Examples:
-```
-sudo ufw allow from ip proto tcp to any port 22
-sudo ufw status verbose
-(sudo ufw reset)
 ```
 Check Listening Ports
 ```
@@ -151,8 +143,7 @@ netstat -tunlp
 Secure Shared Memory:
 ```
 sudo nano /etc/fstab
-
-# Copy paste below the text at the very bottom of the file:
+# Copy paste next line, below the text at the very bottom of the file:
 
 none /run/shm tmpfs defaults,ro 0 0
 ```
