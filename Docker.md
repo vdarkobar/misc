@@ -24,7 +24,6 @@ sudo add-apt-repository \
 ```
 sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo docker -v
-sudo docker ps -a
 ```
   
 Securing Docker:  
