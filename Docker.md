@@ -26,7 +26,18 @@ sudo apt update && sudo apt install -y docker-ce docker-ce-cli containerd.io
 sudo docker -v
 ```
   
-Securing Docker:  
+### Docker Compose:  
+  
+[Check the current Docker Compose release here](https://github.com/docker/compose/releases), update '/1.27.4/' in the command:
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose  
+sudo chmod +x /usr/local/bin/docker-compose
+sudo docker-compose --version
+```
+  
+
+### Securing Docker:  
+
 <p align="center">
   <b>Do no add user to docker group (sudo usermod -aG docker $USER && logout).</b><br>
   <b>Do not mess with the ownership of Docker Socket (/var/run/docker.sock in Linux)</b><br>
@@ -37,13 +48,4 @@ Securing Docker:
 sudo nano /etc/default/docker
 #
 DOCKER_OPTS="--iptables=false"  
-```
-  
-### Docker Compose:  
-  
-[Check the current Docker Compose release here](https://github.com/docker/compose/releases), update '/1.27.4/' in the command:
-```
-sudo curl -L https://github.com/docker/compose/releases/download/1.27.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose  
-sudo chmod +x /usr/local/bin/docker-compose
-sudo docker-compose --version
 ```
