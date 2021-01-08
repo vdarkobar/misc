@@ -169,7 +169,8 @@ net.ipv4.conf.all......
 sudo sysctl -p
 ```
   
-### Fix machine-id change (Cloned VM to have different MAC address):
+### Fix machine-id change 
+(*cloned VM to have different MAC addressws*):
 ```
 cat /etc/machine-id
 sudo rm /etc/machine-id
