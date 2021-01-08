@@ -137,7 +137,7 @@ google-authenticator -d -f -t -r 3 -R 30 -W
 
 ---  
   
-Output > # QR code + backup codes  
+Output >>> QR code + Backup codes  
 
 ---  
   
