@@ -169,8 +169,8 @@ net.ipv4.conf.all......
 sudo sysctl -p
 ```
   
-### Fix machine-id change 
-(*cloned VM to have different MAC addressws*):
+### Fix machine-id change:  
+(*cloned VM to have different MAC addressws*)
 ```
 cat /etc/machine-id
 sudo rm /etc/machine-id
@@ -232,4 +232,4 @@ VM > Cloudinit
 Click  
 - *Regenerate Image*  
   
-#### Convert VM to Template  
+#### Convert VM to Template.  
