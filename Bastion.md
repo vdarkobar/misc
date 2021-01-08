@@ -162,10 +162,10 @@ Change:
 ```
 ChallengeResponseAuthentication yes
 ```
-Add:  
+Add at the end: 
 ```
-AuthenticationMethods keyboard-interactive					# add this line at the end of the file
-#AuthenticationMethods publickey,keyboard-interactive				# if you are using pki
+AuthenticationMethods keyboard-interactive
+#AuthenticationMethods publickey,keyboard-interactive				# If you are using PKI
 ```
 Restart sshd:  
 ```
