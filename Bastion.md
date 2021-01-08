@@ -14,6 +14,7 @@ sudo apt update && sudo apt upgrade -y && \
 sudo apt install -y \
   ufw \
   fail2ban \
+  net-tools \
   qemu-guest-agent
 ```
   
