@@ -23,7 +23,7 @@ Write changes to the disk > Yes > Continue
 
 --- 
   
-### To add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*  
+#### To add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*  
 
 --- 
   
