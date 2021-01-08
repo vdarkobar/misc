@@ -10,7 +10,7 @@
 
 --- 
 
-- For automatic disk resize to work create VM without SWAP Partition during install proces:
+#### For automatic disk resize to work create VM without SWAP Partition during install proces:
 
 ```
 Partition disks > Manual > Continue
