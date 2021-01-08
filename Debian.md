@@ -175,6 +175,27 @@ net.ipv4.conf.all......
 sudo sysctl -p
 ```
   
+### Fix machine-id change (Cloned VM to have different MAC address):
+```
+cat /etc/machine-id
+sudo rm /etc/machine-id
+sudo touch /etc/machine-id
+cat /var/lib/dbus/machine-id
+sudo rm /var/lib/dbus/machine-id
+sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
+ls -l /var/lib/dbus/machine-id
+```
+### Option to disable root account:
+To disable, you can remove the password of the root account or lock it down, or even do both:
+Remove the root password:             << use this one, lock the root account after cloning VM
+```
+sudo passwd -d root
+```
+Lock the account:
+```
+sudo passwd -l root
+```
+  
 ### Cloud-init:
 ```
 sudo nano /etc/cloud/cloud.cfg
@@ -201,39 +222,19 @@ cloud_final_modules:
  - rightscale_userdata
 ```
   
-### Fix machine-id change (Cloned VM to have different MAC address):
-```
-cat /etc/machine-id
-sudo rm /etc/machine-id
-sudo touch /etc/machine-id
-cat /var/lib/dbus/machine-id
-sudo rm /var/lib/dbus/machine-id
-sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
-ls -l /var/lib/dbus/machine-id
-```
-### Option to disable root account:
-To disable, you can remove the password of the root account or lock it down, or even do both:
-Remove the root password:             << use this one, lock the root account after cloning VM
-```
-sudo passwd -d root
-```
-Lock the account:
-```
-sudo passwd -l root
-```
-  
 Poweroff VM to convert to template:
 ```
 sudo apt clean && sudo apt autoremove
 sudo poweroff
 ```
   
-Add cloud-init drive to VM:  
-- VM > Hardware > Add > Cloudinit drive  
+#### Add cloud-init drive to VM: 
+  
+- *VM > Hardware > Add > Cloudinit drive*  
 Add login data to Cloudinit drive  
 VM > Cloudinit  
-- Add: username and password, public key  
+- *Add: username and password, public key*  
 Click  
-- Regenerate Image  
+- *Regenerate Image*  
   
-Convert VM to Template  
+#### Convert VM to Template  
