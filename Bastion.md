@@ -134,11 +134,14 @@ google-authenticator -d -f -t -r 3 -R 30 -W
 #    issue time-based rather than counter-based codes, 
 #    limit the user to a maximum of three logins every 30 seconds.
 ```
+
 ---  
   
-Output > # QR code + backup codes 
----
-    
+Output > # QR code + backup codes  
+
+---  
+  
+
 Edit the PAM configuration for the sshd service (/etc/pam.d/sshd):  
 ```
 sudo nano /etc/pam.d/sshd
