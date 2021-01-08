@@ -7,10 +7,7 @@
   
 - Install Debian VM (2CPU/2GBRAM/10GBHDD), add SSH Server  
 - Dont set root password during installation (created user will have sudo privilages)  
-
---- 
-
-#### For automatic disk resize to work create VM without SWAP Partition during install proces:
+- For automatic disk resize to work create VM without SWAP Partition during install proces:
 
 ```
 Partition disks > Manual > Continue
@@ -23,8 +20,10 @@ Finish partitioning and write changes to the disk > Continue
 Return to the partitioning menu > No > Continue
 Write changes to the disk > Yes > Continue
 ```
+
+--- 
   
-#### To add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*  
+### To add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*  
 
 --- 
   
