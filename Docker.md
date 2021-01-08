@@ -30,10 +30,12 @@ Securing Docker:
 <p align="center">
   <b>Do no add user to docker group (sudo usermod -aG docker $USER && logout).</b><br>
   <b>Do not mess with the ownership of Docker Socket (/var/run/docker.sock in Linux)</b><br>
-  <b>Change DOCKER_OPTS to Respect IP Table Firewall. Edit /etc/default/docker and add the following line:</b><br>
+  <b>Change DOCKER_OPTS to Respect IP Table Firewall. Add the following line:</b><br>
 </p>
 
 ```
+sudo nano /etc/default/docker
+#
 DOCKER_OPTS="--iptables=false"  
 ```
   
