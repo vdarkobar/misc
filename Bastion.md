@@ -16,6 +16,9 @@ sudo apt install -y \
   fail2ban \
   qemu-guest-agent
 ```
+  
+### Replace content od the: *~/.bashrc* file with this one: <a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a> then log out and log back in.
+  
 ```
 sudo apt clean && sudo apt autoremove && sudo reboot
 ```
