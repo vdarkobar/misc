@@ -142,11 +142,11 @@ Output >>> QR code + Backup codes
 ---  
   
 
-Edit the PAM configuration for the sshd service (/etc/pam.d/sshd):  
+Edit the PAM configuration for the sshd service:  
 ```
 sudo nano /etc/pam.d/sshd
 ```
-Change the default auth so that SSH won’t prompt users for a password if they don’t present a 2-factor token (/etc/pam.d/sshd), comment out:  
+Change the default auth so that SSH won’t prompt users for a password if they don’t present a 2-factor token, comment out:  
 ```
 # @include common-auth
 ```
