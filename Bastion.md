@@ -137,31 +137,32 @@ google-authenticator -d -f -t -r 3 -R 30 -W
   
 Output > # QR code + backup codes 
   
-Edit the PAM configuration for the sshd service (/etc/pam.d/sshd), add:
+Edit the PAM configuration for the sshd service (/etc/pam.d/sshd):  
 ```
 sudo nano /etc/pam.d/sshd
 ```
+Change the default auth so that SSH won’t prompt users for a password if they don’t present a 2-factor token (/etc/pam.d/sshd), comment out:  
+```
+# @include common-auth
+```
+Add at the end:  
 ```
 auth required pam_google_authenticator.so nullok
 ```
-Change the default auth so that SSH won’t prompt users for a password if they don’t present a 2-factor token (/etc/pam.d/sshd), comment out:
-```
-sudo nano /etc/pam.d/sshd
-```
-```
-#@include common-auth
-```	
-Tell SSH to require the use of 2-factor auth. Edit the /etc/ssh/sshd_config file to allow the use of PAM for credentials, change:
+Tell SSH to require the use of 2-factor auth. Edit the /etc/ssh/sshd_config file to allow the use of PAM for credentials:  
 ```
 sudo nano /etc/ssh/sshd_config
 ```
+Change:  
 ```
 ChallengeResponseAuthentication yes
+```
+Add:  
+```
 AuthenticationMethods keyboard-interactive					# add this line at the end of the file
-
 #AuthenticationMethods publickey,keyboard-interactive				# if you are using pki
 ```
-Restart sshd:
+Restart sshd:  
 ```
 sudo systemctl restart sshd
 ```
