@@ -72,9 +72,9 @@ sudo nano /etc/ssh/sshd_config
 Change values to:
 ```
 PermitRootLogin no
+PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM no
-PasswordAuthentication no
 ```	
 Add line at the end (adjust <username>):
 ```
