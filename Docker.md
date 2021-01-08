@@ -5,7 +5,11 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
 </p>  
   
-First add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk* and restart.
+--- 
+  
+#### To add free space to Cloned VM: *VM > Hardware > Hard Disk > Resize disk*  
+
+--- 
   
 ### Docker:
 ```
