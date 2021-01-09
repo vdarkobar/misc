@@ -1,3 +1,6 @@
+  
+<a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a> | <a href="https://github.com/vdarkobar/NextCloud/blob/main/README.md#nextcloud">NextCloud</a>
+  
 #### Edit *config.php* file:
 ```
 sudo nano /home/<USER>/NextCloud/files/config/config.php
