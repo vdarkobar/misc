@@ -34,6 +34,8 @@ Connect *Collabora Online* app with the Server
 ```
 https://<NextCloud> > Account > Settings > Collabora Online Development Edition
 ```
+
+Enter *Collabora* - Document Server url
   
 <p align="center">
   <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
