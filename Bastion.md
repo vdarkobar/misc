@@ -134,7 +134,7 @@ Run command:
 ```
 google-authenticator -d -f -t -r 3 -R 30 -W
 ```
-Select *time-based codes*
+Select: *time-based* codes.
 ```
 # Options used: 
 #    disallow reuse of the same token twice, 
