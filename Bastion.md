@@ -25,6 +25,7 @@ sudo reboot
 ```
   
 ### SSH:
+Edit:
 ```
 sudo nano /etc/ssh/sshd_config
 ```	    
