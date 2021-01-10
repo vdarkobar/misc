@@ -6,7 +6,7 @@
 </p>  
   
 *Create <a href="https://github.com/vdarkobar/shared/blob/main/Proxmox.md#proxmox">Proxmox</a> VM: (1CPU/1GBRAM/8GBHDD) and add SSH Server.*  
-*Dont set root password during installation (created user will have sudo privilages).*  
+*Do not set root password during installation (created user will have sudo privilages).*  
   
 ### Update, install packages and reboot:
 ```
