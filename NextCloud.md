@@ -22,13 +22,15 @@ Default landing app after login, add at the end:*
   'defaultapp' => 'files', # << added here
 );
 ```
+  
+#### Collabora - Document Server  
 
-Log in and install Collabora Online  
+Log in and install Collabora Online App:
 ```
 https://<NextCloud> > Account > Apps > Collabora Online
 ```
 
-Connect Collabora Online app with the Server  
+Connect Collabora Online App with the Server  
 ```
 https://<NextCloud> > Account > Settings > Collabora Online Development Edition
 ```
@@ -36,5 +38,3 @@ https://<NextCloud> > Account > Settings > Collabora Online Development Edition
 <p align="center">
   <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
 </p>
-  
-
