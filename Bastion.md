@@ -183,7 +183,7 @@ Test logging in using Verification Code.
 ```
 ssh-keygen -t ecdsa -b 521
 ```
-Copy ID (*public.key*) to desired VM:
+Copy ID (*public.key*) to <a href="https://github.com/vdarkobar/shared/blob/main/Debian.md#debian">desired VM</a>:
 ```
 ssh-copy-id -i ~/.ssh/id_ecdsa.pub user@ip
 ```
