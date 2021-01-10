@@ -125,8 +125,8 @@ Lock the account:
 sudo passwd -l root
 ```
   
-### Install google-authenticator for Debian/Ubuntu-based systems:
-config file : ~/.google_authenticator
+### Install *google-authenticator* for Debian/Ubuntu-based systems:  
+config file : ~/.google_authenticator  
 ```
 sudo apt-get install libpam-google-authenticator
 google-authenticator -d -f -t -r 3 -R 30 -W
