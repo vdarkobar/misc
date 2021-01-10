@@ -143,7 +143,7 @@ google-authenticator -d -f -t -r 3 -R 30 -W
 
 ---  
   
-Output >>> QR code + Backup codes  
+Output >> *QR code + Backup codes*  > use it to setup *google-authenticator app* on your smartphone. Save backup codes.
 
 ---  
   
