@@ -23,7 +23,7 @@ Default landing app after login, add at the end:*
 );
 ```
   
-#### Collabora - Document Server  
+#### *Collabora* - Document Server  
 
 Log in and install Collabora Online App:
 ```
