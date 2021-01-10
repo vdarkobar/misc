@@ -79,6 +79,7 @@ netstat -tunlp
   
 ### Secure the server:
 Secure Shared Memory:
+Edit:
 ```
 sudo nano /etc/fstab
 ```
