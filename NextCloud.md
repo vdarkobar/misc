@@ -25,12 +25,12 @@ Default landing app after login, add at the end:*
   
 #### *Collabora* - Document Server  
 
-Log in and install Collabora Online App:
+Log in and install *Collabora Online* app:
 ```
 https://<NextCloud> > Account > Apps > Collabora Online
 ```
 
-Connect Collabora Online App with the Server  
+Connect *Collabora Online* app with the Server  
 ```
 https://<NextCloud> > Account > Settings > Collabora Online Development Edition
 ```
