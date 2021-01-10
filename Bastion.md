@@ -18,7 +18,7 @@ sudo apt install -y \
   qemu-guest-agent
 ```
   
-#### Replace content od the: *~/.bashrc* file with this one: <a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a> then log out and log back in.
+#### Replace content od the: *~/.bashrc* file with this one: <i><a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a></i> then log out and log back in.
   
 ```
 sudo reboot
