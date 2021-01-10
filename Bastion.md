@@ -24,7 +24,8 @@ sudo apt install -y \
 sudo reboot
 ```
   
-### SSH:
+### SSH:  
+
 Edit:
 ```
 sudo nano /etc/ssh/sshd_config
@@ -78,8 +79,8 @@ netstat -tunlp
 ```
   
 ### Secure the server:
-Secure Shared Memory:
-Edit:
+Secure Shared Memory, edit:  
+
 ```
 sudo nano /etc/fstab
 ```
