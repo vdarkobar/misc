@@ -13,7 +13,7 @@ sudo nano /home/<USER>/NextCloud/files/config/config.php
 # or (if subdomain):
 'overwrite.cli.url' => 'https://subdomain.example.com', 'overwritehost' => 'subdomain.example.com', 'overwriteprotocol' => 'https',
 ```
-Default landing app after login, add at the end:*
+Default landing app after login, add at the end:
 ```
 'defaultapp' => 'files',
 # ...
@@ -23,19 +23,19 @@ Default landing app after login, add at the end:*
 );
 ```
   
-#### *Collabora* - Document Server  
+#### *Collabora* - Document Server:  
 
 Log in and install *Collabora Online* app:
 ```
 https://<NextCloud> > Account > Apps > Collabora Online
 ```
 
-Connect *Collabora Online* app with the Server  
+Connect *Collabora Online* app with the Server:  
 ```
 https://<NextCloud> > Account > Settings > Collabora Online Development Edition
 ```
 
-Enter *Collabora* - Document Server url
+Enter *Collabora* - Document Server url:
   
 <p align="center">
   <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
