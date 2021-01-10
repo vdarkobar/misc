@@ -19,6 +19,6 @@ Default landing app after login, add at the end:*
 # ...
   'installed' => true,
   'instanceid' => 'ocjoficzuewq',
-  'defaultapp' => 'files',
+  'defaultapp' => 'files', # << added here
 );
 ```
