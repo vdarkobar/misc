@@ -114,7 +114,7 @@ Test:
 sudo sysctl -p
 ```
   
-### Option to disable root account:
+### Disable root account:
 To disable, you can remove the password of the root account or lock it down, or even do both:  
   
 Remove the root password:
