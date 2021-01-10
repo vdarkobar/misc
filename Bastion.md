@@ -183,7 +183,7 @@ Test logging in using Verification Code.
 ```
 ssh-keygen -t ecdsa -b 521
 ```
-Copy ID to desired VM:
+Copy ID (*public.key*) to desired VM:
 ```
 ssh-copy-id -i ~/.ssh/id_ecdsa.pub user@ip
 ```
