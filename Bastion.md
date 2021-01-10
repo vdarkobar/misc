@@ -186,4 +186,4 @@ SSH to VM
 ```
 ssh user@ip
 ```
-<a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
+<a href="https://github.com/vdarkobar/shared/blob/main/Bastion.md#bastion">top of the page</a>
