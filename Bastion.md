@@ -2,7 +2,7 @@
 ## Create Bastion Server
   
 <p align="left">
-  <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
+  <a href="https://github.com/vdarkobar/Home_Cloud#small-home-cloud">Home</a>
 </p>  
   
 *Create <a href="https://github.com/vdarkobar/shared/blob/main/Proxmox.md#proxmox">Proxmox</a> VM: (1CPU/1GBRAM/8GBHDD) and add SSH Server.*  
