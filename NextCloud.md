@@ -1,5 +1,5 @@
   
-<a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a> | <a href="https://github.com/vdarkobar/NextCloud/blob/main/README.md#nextcloud">NextCloud</a>
+<a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a> | <a href="https://github.com/vdarkobar/NextCloud#nextcloud">NextCloud</a>
   
 #### Edit *config.php* file:
 ```
