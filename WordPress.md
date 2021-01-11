@@ -1,3 +1,5 @@
+<a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a> | <a href="https://github.com/vdarkobar/WordPress#wordpress">NextCloud</a>
+  
 #### File upload limit:
 ```
 sudo nano html/.htaccess
