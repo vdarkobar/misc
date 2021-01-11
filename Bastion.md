@@ -177,7 +177,7 @@ AuthenticationMethods keyboard-interactive
 ```
 Restart sshd:  
 ```
-sudo systemctl restart sshd
+sudo systemctl restart sshd && logout
 ```
 Test logging in using Verification Code.
   
