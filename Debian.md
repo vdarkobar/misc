@@ -55,7 +55,7 @@ sudo apt install -y \
   software-properties-common
 ```
   
-### Create swap file:
+### Create *SWAP* file:
 ```
 sudo -i
 dd if=/dev/zero of=/swapfile bs=1024 count=1536000
