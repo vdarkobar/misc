@@ -2,8 +2,8 @@
 ## Install Docke and Docker compose
   
 <p align="left">
-  <a href="https://github.com/vdarkobar/Home_Cloud#proxmox">Home</a>
-</p>  
+  <a href="https://github.com/vdarkobar/Home_Cloud#small-home-cloud">Home</a>
+</p>   
   
 --- 
   
