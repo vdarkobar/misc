@@ -85,7 +85,7 @@ Secure Shared Memory, edit:
 ```
 sudo nano /etc/fstab
 ```
-Copy paste the below text the very bottom of the file:
+Paste below text the very bottom of the file:
 ```
 none /run/shm tmpfs defaults,ro 0 0
 ```
