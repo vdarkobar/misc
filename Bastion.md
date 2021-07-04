@@ -190,7 +190,7 @@ ssh-keygen -t ed25519 -a 200    <<< best signature scheme 2021
 	
 Copy ID (*public.key*) to <a href="https://github.com/vdarkobar/shared/blob/main/Debian.md#debian">desired VM</a> and test:
 ```
-ssh-copy-id -i ~/.ssh/id_ecdsa.pub user@ip
+ssh-copy-id -i ~/.ssh/id_ed25519.pub user@ip
 ```
 ```
 ssh user@ip
