@@ -15,7 +15,25 @@ sudo apt install -y \
   ufw \
   fail2ban \
   net-tools \
+  unattended-upgrades \
   qemu-guest-agent
+```
+  
+### Enable *unattended-upgrades*:
+```
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+```
+Edit file:
+```
+sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+```
+Uncomment:
+```
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
+Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
+Unattended-Upgrade::Remove-Unused-Dependencies "false";    <<< change to "true"
+Unattended-Upgrade::Automatic-Reboot "false";
+Unattended-Upgrade::Automatic-Reboot-Time "02:00";
 ```
   
 #### Replace content od the: *~/.bashrc* file with the contents of this one: <i><a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a></i>.  
