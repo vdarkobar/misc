@@ -183,7 +183,8 @@ Test logging in using Verification Code.
   
 ### Generate keys:
 ```
-ssh-keygen -t ecdsa -b 521
+ssh-keygen -t ecdsa -b 521      <<< avoid
+ssh-keygen -t ed25519 -a 200    <<< best signature scheme 2021
 ```
 Copy ID (*public.key*) to <a href="https://github.com/vdarkobar/shared/blob/main/Debian.md#debian">desired VM</a> and test:
 ```
