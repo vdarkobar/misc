@@ -23,7 +23,7 @@ Write changes to the disk > Yes > Continue
   
 ### Login to Bastion and copy ID to VM:
 ```
-ssh-copy-id -i ~/.ssh/id_ecdsa.pub user@ip
+ssh-copy-id -i ~/.ssh/id_ed25519.pub user@ip
 ```
 Test: SSH to VM:
 ```
