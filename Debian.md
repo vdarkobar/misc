@@ -124,6 +124,10 @@ $ bantime =10m
 $ findtime =10m
 $ maxretry=5
 ```
+Uncomment "ignoreip", add additional ip's:
+```	
+ignoreip = 127.0.0.1/8 ::1    <<< localhost
+```	
 ```
 sudo systemctl restart fail2ban
 ```
