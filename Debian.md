@@ -51,6 +51,7 @@ sudo apt install -y \
   ca-certificates \
   qemu-guest-agent \
   apt-transport-https \
+  unattended-upgrades \
   cloud-initramfs-growroot \
   software-properties-common
 ```
