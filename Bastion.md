@@ -72,6 +72,10 @@ Enabling jails (explicit rule), under jail name add:
 ```
 enabled = true
 ```
+Uncomment "ignoreip", add additional ip's:
+```	
+ignoreip = 127.0.0.1/8 ::1    <<< localhost
+```	
 ```
 sudo systemctl restart fail2ban
 ```
