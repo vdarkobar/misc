@@ -56,7 +56,7 @@ sudo apt install -y \
   software-properties-common
 ```
   
-### Enable unattended-upgrades:
+### Enable *unattended-upgrades*:
 ```
 sudo dpkg-reconfigure --priority=low unattended-upgrades
 ```
