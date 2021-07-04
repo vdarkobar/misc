@@ -56,6 +56,20 @@ sudo apt install -y \
   software-properties-common
 ```
   
+### Enable unattended-upgrades:
+```
+sudo dpkg-reconfigure --priority=low unattended-upgrades
+```
+Edit file:
+```
+sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+```
+Uncomment:
+```
+Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
+Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
+```
+    
 ### Create *SWAP* file:
 ```
 sudo -i
