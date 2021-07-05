@@ -64,6 +64,8 @@ sudo apt install -y \
 ```
 sudo apt update && \
 sudo apt install -y \
+  git \
+  gpg \
   ufw \
   wget \
   curl \
@@ -80,6 +82,7 @@ sudo apt install -y \
   unattended-upgrades \
   cloud-initramfs-growroot \
   software-properties-common
+  cloud-initramfs-growroot 
 ```
   
 ### Enable *unattended-upgrades*:
