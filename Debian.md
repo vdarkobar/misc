@@ -99,12 +99,11 @@ Add line at the end to allow only your username (*more can be added, in line, sp
 ```
 AllowUsers <username>
 ```
-  
-If needed, search for the entry **# Port 22**, uncomment and replace 22 with a port number between 49152 and 65535 (Dynamic/private ports): 
-  
 ```
 sudo systemctl restart ssh
 ```
+  
+If needed, search for the entry **# Port 22**, uncomment and replace 22 with a port number between 49152 and 65535 (Dynamic/private ports): 
   
 ### Fail2Ban:
 ```
