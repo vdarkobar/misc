@@ -156,6 +156,7 @@ sudo ufw status numbered
 ```
 Check Listening Ports
 ```
+sudo ss -tupln
 netstat -tunlp
 ```
   
