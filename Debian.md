@@ -41,6 +41,7 @@ mkswap /swapfile
 swapon /swapfile
 echo "/swapfile       swap    swap    defaults        0 0" >> /etc/fstab
 ```
+Exit and reboot.
   
 ### Update and install packages v01: 
 ```
