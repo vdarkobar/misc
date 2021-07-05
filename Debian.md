@@ -46,6 +46,24 @@ echo "/swapfile       swap    swap    defaults        0 0" >> /etc/fstab
 ```
 sudo apt update && \
 sudo apt install -y \
+  git \
+  gpg \
+  ufw \
+  wget \
+  curl \
+  fail2ban \
+  cloud-init \
+  bash-completion \
+  fonts-powerline \
+  qemu-guest-agent \
+  unattended-upgrades \
+  cloud-initramfs-growroot 
+```
+  
+### Update and install packages v01 (*Docker, Traefik etc*): 
+```
+sudo apt update && \
+sudo apt install -y \
   ufw \
   wget \
   curl \
@@ -62,24 +80,6 @@ sudo apt install -y \
   unattended-upgrades \
   cloud-initramfs-growroot \
   software-properties-common
-```
-  
-### Update and install packages v02: 
-```
-sudo apt update && \
-sudo apt install -y \
-  git \
-  gpg \
-  ufw \
-  wget \
-  curl \
-  fail2ban \
-  cloud-init \
-  bash-completion \
-  fonts-powerline \
-  qemu-guest-agent \
-  unattended-upgrades \
-  cloud-initramfs-growroot 
 ```
   
 ### Enable *unattended-upgrades*:
