@@ -94,7 +94,7 @@ PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM no
 ```	
-Search for the entry #Port 22, replace port 22 with a port between 49152 and 65535 (Dynamic/private ports)*: 
+Search for the entry #Port 22, replace 22 with a port number between 49152 and 65535 (Dynamic/private ports): 
   
 Add line at the end to allow only your username (*more can be added, in line, space separated*):
   
