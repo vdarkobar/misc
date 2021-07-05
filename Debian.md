@@ -32,6 +32,16 @@ ssh user@ip
   
 ### Replace content od the: *~/.bashrc* file with this one: <a href="https://github.com/vdarkobar/shared/blob/main/.bashrc">.bashrc</a> then log out and log back in.
   
+### Create *SWAP* file:
+```
+sudo -i
+dd if=/dev/zero of=/swapfile bs=1024 count=1536000
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+echo "/swapfile       swap    swap    defaults        0 0" >> /etc/fstab
+```
+    
 ### Update and install packages: 
 ```
 sudo apt update && \
@@ -71,16 +81,6 @@ Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
 Unattended-Upgrade::Remove-Unused-Dependencies "false";
 Unattended-Upgrade::Automatic-Reboot "false";
 Unattended-Upgrade::Automatic-Reboot-Time "02:00";
-```
-  
-### Create *SWAP* file:
-```
-sudo -i
-dd if=/dev/zero of=/swapfile bs=1024 count=1536000
-chmod 600 /swapfile
-mkswap /swapfile
-swapon /swapfile
-echo "/swapfile       swap    swap    defaults        0 0" >> /etc/fstab
 ```
   
 ### Lockdown SSH:
