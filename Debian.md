@@ -163,6 +163,14 @@ Check Listening Ports
 sudo ss -tupln
 netstat -tunlp
 ```
+Prevent PING:
+```
+sudo nano /etc/ufw/before.rules
+```
+Find and edit section: **# ok icmp codes for INPUT**, add line:
+```
+-A ufw-before-input -p icmp --icmp-type echo-request -j DROP
+```
   
 ### Secure the server:
 Secure Shared Memory:
