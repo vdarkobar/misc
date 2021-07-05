@@ -197,7 +197,7 @@ sudo sysctl -p
 ```
   
 ### Fix machine-id change:  
-(*cloned VM to have different MAC addressws*)
+(*cloned VM to have different MAC addresses*)
 ```
 cat /etc/machine-id
 sudo rm /etc/machine-id
