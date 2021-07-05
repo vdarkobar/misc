@@ -94,6 +94,9 @@ PasswordAuthentication no
 ChallengeResponseAuthentication no
 UsePAM no
 ```	
+Search for the entry #Port 22.
+Replace port 22 with a port between 1024 and 65536. 
+  
 Add line at the end (adjust <username>):
 ```
 AllowUsers <username>
