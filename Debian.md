@@ -68,11 +68,11 @@ Uncomment:
 ```
 Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
 Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
-Unattended-Upgrade::Remove-Unused-Dependencies "false";    <<< change to "true"
+Unattended-Upgrade::Remove-Unused-Dependencies "false";
 Unattended-Upgrade::Automatic-Reboot "false";
 Unattended-Upgrade::Automatic-Reboot-Time "02:00";
 ```
-    
+  
 ### Create *SWAP* file:
 ```
 sudo -i
@@ -98,7 +98,6 @@ Search for the entry (*Replace port 22 with a port between 49152 and 65535 (Dyna
 ```
 #Port 22
 ```
-  
 Add line at the end to allow only your username (*more can be added, in line, space separated*):
 ```
 AllowUsers <username>
@@ -245,7 +244,7 @@ cloud_final_modules:
  - rightscale_userdata
 ```
   
-Poweroff VM to convert to template:
+#### Poweroff VM to convert to template:
 ```
 sudo apt clean && sudo apt autoremove
 sudo poweroff
