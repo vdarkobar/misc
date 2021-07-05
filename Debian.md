@@ -99,7 +99,7 @@ Search for the entry (*Replace port 22 with a port between 49152 and 65535*):
 #Port 22
 ```
   
-Add line at the end (adjust <username>):
+Add line at the end (adjust *username*):
 ```
 AllowUsers <username>
 ```
