@@ -82,7 +82,6 @@ sudo apt install -y \
   unattended-upgrades \
   cloud-initramfs-growroot \
   software-properties-common
-  cloud-initramfs-growroot 
 ```
   
 ### Enable *unattended-upgrades*:
