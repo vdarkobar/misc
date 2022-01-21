@@ -227,7 +227,7 @@ sudo sysctl -p
 ```
 cat /etc/machine-id
 sudo rm /etc/machine-id
-sudo touch /etc/machine-id
+sudo truncate -s 0 /etc/machine-id 	#not working any more: sudo touch /etc/machine-id
 cat /var/lib/dbus/machine-id
 sudo rm /var/lib/dbus/machine-id
 sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
