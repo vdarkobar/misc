@@ -60,7 +60,7 @@ sudo apt install -y \
   software-properties-common
 ```
   
-### Update and install packages v01 (*Docker, Traefik etc*): 
+### Update and install packages v02 (*Docker, Traefik etc*): 
 ```
 sudo apt update && \
 sudo apt install -y \
