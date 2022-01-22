@@ -20,7 +20,10 @@ Finish partitioning and write changes to the disk > Continue
 Return to the partitioning menu > No > Continue
 Write changes to the disk > Yes > Continue
 ```
-  
+### Remove old SSH Host Keys:
+```
+sudo rm /etc/ssh/ssh_host_*
+```
 ### Login to <a href="https://github.com/vdarkobar/shared/blob/main/Bastion.md#bastion">Bastion</a> and copy ID to VM:
 ```
 ssh-copy-id -i ~/.ssh/id_ed25519.pub user@ip
@@ -226,9 +229,7 @@ sudo sysctl -p
 (*cloned VM to have different MAC addresses*)
 ```
 cat /etc/machine-id
-sudo rm /etc/machine-id
-sudo truncate -s 0 /etc/machine-id 	#not working any more: sudo touch /etc/machine-id
-cat /var/lib/dbus/machine-id
+sudo truncate -s 0 /etc/machine-id
 sudo rm /var/lib/dbus/machine-id
 sudo ln -s /etc/machine-id /var/lib/dbus/machine-id
 ls -l /var/lib/dbus/machine-id
@@ -272,8 +273,7 @@ cloud_final_modules:
   
 #### Poweroff VM to convert to template:
 ```
-sudo apt clean && sudo apt autoremove
-sudo poweroff
+sudo apt clean && sudo apt autoremove && sudo poweroff
 ```
   
 #### Add cloud-init drive to VM: 
