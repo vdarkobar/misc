@@ -268,6 +268,12 @@ cloud_final_modules:
  - rightscale_userdata
 ```
   
+#### Clear old SSH host keys:
+```
+cd /etc/ssh/
+sudo rm ssh_host_*
+```
+  
 #### Poweroff VM to convert to template:
 ```
 sudo apt clean && sudo apt autoremove && sudo poweroff
