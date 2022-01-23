@@ -5,7 +5,7 @@
   <a href="https://github.com/vdarkobar/Home_Cloud#small-home-cloud">Home</a>
 </p>  
   
-- Install Debian VM (2CPU/2GBRAM/10GBHDD), add SSH Server  
+- Install Debian VM (2CPU/2GBRAM/16GBHDD), add SSH Server  
 - Dont set root password during installation (created user will have sudo privilages)  
   
 ### For automatic *disk resize* to work, create VM without SWAP Partition during install process:
@@ -96,7 +96,7 @@ Uncomment:
 ```
 Unattended-Upgrade::Remove-Unused-Kernel-Packages "true";
 Unattended-Upgrade::Remove-New-Unused-Dependencies "true";
-Unattended-Upgrade::Remove-Unused-Dependencies "true";
+Unattended-Upgrade::Remove-Unused-Dependencies "false";    <<< change to "true"
 Unattended-Upgrade::Automatic-Reboot "false";
 Unattended-Upgrade::Automatic-Reboot-Time "02:00";
 ```
