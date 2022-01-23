@@ -298,8 +298,8 @@ sudo truncate -s 0 /etc/machine-id
 sudo apt clean && sudo apt autoremove && sudo poweroff
 ```
   
-Click  
-- *Regenerate Image*  #(Cloudinit drive)
+#### Cloudinit drive > Click  
+- *Regenerate Image*
   
 #### Convert VM to Template. 
 
