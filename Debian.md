@@ -291,7 +291,10 @@ Click
 #### Convert VM to Template.  
   
   
-#### Create new template from old template, clone template and log in to the VM:
+### Create new template from old template:
+  
+#### Clone template and log in to the VM:
+  
 ```
 sudo rm /etc/ssh/ssh_host_*
 sudo truncate -s 0 /etc/machine-id
