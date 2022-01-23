@@ -13,10 +13,16 @@
 sudo apt update && sudo apt upgrade -y && \
 sudo apt install -y \
   ufw \
+  curl \
+  wget \
+  gnupg2 \
+  python3 \
   fail2ban \
   net-tools \
-  unattended-upgrades \
-  qemu-guest-agent
+  python3-pip \
+  qemu-guest-agent \
+  unattended-upgrades
+  
 ```
   
 ### Enable *unattended-upgrades*:
