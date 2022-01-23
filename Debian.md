@@ -289,5 +289,18 @@ Click
 - *Regenerate Image*  
   
 #### Convert VM to Template.  
+  
+  
+#### Create new template from old template, clone template and log in to the VM:
+```
+sudo rm /etc/ssh/ssh_host_*
+sudo truncate -s 0 /etc/machine-id
+sudo apt clean && sudo apt autoremove && sudo poweroff
+```
+  
+Click  
+- *Regenerate Image*  #(Cloudinit drive)
+  
+#### Convert VM to Template. 
 
 <a href="https://github.com/vdarkobar/shared/blob/main/Debian.md#debian">top of the page</a>
