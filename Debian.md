@@ -50,6 +50,7 @@ sudo apt install -y \
   ufw \
   wget \
   curl \
+  gnupg2 \
   fail2ban \
   cloud-init \
   bash-completion \
@@ -69,6 +70,7 @@ sudo apt install -y \
   ufw \
   wget \
   curl \
+  gnupg2 \
   fail2ban \
   cloud-init \
   python3-pip \
