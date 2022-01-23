@@ -16,7 +16,6 @@ sudo apt install -y \
   curl \
   wget \
   gnupg2 \
-  python3 \
   fail2ban \
   net-tools \
   python3-pip \
