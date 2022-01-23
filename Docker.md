@@ -39,7 +39,7 @@ sudo docker-compose --version
 ### Securing Docker:  
 
 <p align="center">
-  <b>Do no add user to docker group (sudo usermod -aG docker $USER && logout).</b><br>
+  <b>Do not add user to docker group (sudo usermod -aG docker $USER && logout).</b><br>
   <b>Do not mess with the ownership of Docker Socket (/var/run/docker.sock in Linux)</b><br>
   <b>Change DOCKER_OPTS to Respect IP Table Firewall. Add the following line:</b><br>
 </p>
