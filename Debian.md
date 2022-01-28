@@ -73,6 +73,7 @@ sudo apt install -y \
   gnupg2 \
   fail2ban \
   cloud-init \
+  lsb-release \
   python3-pip \
   gnupg-agent \
   apache2-utils \
