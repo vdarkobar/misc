@@ -28,7 +28,7 @@ sudo docker -v
   
 ### Docker Compose:  
   
-[Check the current Docker Compose release here](https://github.com/docker/compose/releases), update '/1.28.2/' in the command:
+[Check the current Docker Compose release here](https://github.com/docker/compose/releases):
 ```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose  
 sudo chmod +x /usr/local/bin/docker-compose
