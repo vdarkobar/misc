@@ -49,3 +49,8 @@ sudo nano /etc/default/docker
 #
 DOCKER_OPTS="--iptables=false"  
 ```
+  
+### Test:
+```
+docker run --name mynginx1 -p 80:80 -d nginx 
+```
