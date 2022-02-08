@@ -193,6 +193,61 @@ netstat -tulpn | grep apcupsd
 tail -f /var/log/apcupsd.events
 ```		
   
+# Windows Guest on Proxmox
+
+
+<p align="center">
+  <b>Resources:</b><br>
+<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads">VirtIO drivers</a> |
+<a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">Stable</a> |
+<a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso">Latest</a>
+  <br><br>
+</p>
+
+	Pre-installation
+		-NetKVM — the VirtIO Ethernet driver
+		-viostor — the VirtIO block storage driver
+		-vioscsi — the VirtIO SCSI driver
+		-qxldod — QXL graphics driver (if installing Windows 7 or earlier, choose qxl instead)		
+	Post-installation
+		-Balloon — VirtIO memory balloon driver (optional, but recommended unless your server has plenty of RAM)
+		#Copy folder> D:\Balloon\w10\amd64 to C:\Program Files and rename it to: Balloon
+		#Open CMD as Administrator, CD to C:\Program Files\Balloon> and run command: blnsvr.exe -i
+		-guest-agent
+
+################
+####   VM   ####
+################
+
+- virtual hard disk > 			"SCSI"  Set  as  for best performance  and tick
+- controller > 				"VirtIO SCSI"
+- cache option > 			"Write Through" (explanation: https://medium.com/@carll/installing-server-2016-2019-core-gui-less-with-proxmox-649ba8d634db)
+
+---------------------------------------------------------------------------
+- !!! for TRIM option tick !!! > 	"Discard" (to optimally use disk space) -
+---------------------------------------------------------------------------
+
+CATEGORY		OPTION			VALUE
+
+OS			    Guest OS		Microsoft Windows (10/Server)
+			      CD image		Your downloaded ISO
+
+System			Graphics card		Default
+			      SCSI Controller		VirtIO SCSI
+			      Qemu Agent		Enabled
+
+Hard Disk		Bus/Device		VirtIO Block (0)
+			      Disk Size		>50GB ideally
+			      Cache			Write Through
+
+CPU			    Sockets			1 (adjust to your needs)
+			      Cores			4 (adjust to your needs)
+			      Type			host
+
+Memory			Memory			8192 (adjust to your liking)
+Network			Model			VirtIO (paravirtualized)
+
+
 <!--- Commented out
 >>> After PVE version 6.2-12
 
