@@ -231,7 +231,7 @@ Post-installation
   
 
 CATEGORY		OPTION			VALUE
-
+```
 OS			    Guest OS		Microsoft Windows (10/Server)
 			      CD image		Your downloaded ISO
 
@@ -249,7 +249,7 @@ CPU			    Sockets			1 (adjust to your needs)
 
 Memory			Memory			8192 (adjust to your liking)
 Network			Model			VirtIO (paravirtualized)
-
+```
 
 <!--- Commented out
 >>> After PVE version 6.2-12
