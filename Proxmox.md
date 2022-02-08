@@ -7,3 +7,7 @@
   
   
   Download <a href="https://www.proxmox.com/de/proxmox-ve">Proxmox VE</a> and create bootable USB drive using <a href="http://rufus.ie/">Rufus</a>. Install and configure Proxmox VE. Download <a href="https://www.debian.org/index.html">Debian</a> and upload it to *Proxmox ISO Images*.
+  
+ <p align="left">
+  <a href="https://github.com/vdarkobar/How-To/blob/master/ProxMox%20VE.md">How-to</a>
+</p>  
