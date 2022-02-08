@@ -194,13 +194,14 @@ tail -f /var/log/apcupsd.events
 ```		
   
 # Windows Guest on Proxmox
-
-
+  
 <p align="center">
-  <b>Resources:</b><br>
-<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads">VirtIO drivers</a> |
+  <b>Download:</b><br>
+<a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso">Windows</a> |
+<a href="https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html#virtio-win-direct-downloads">VirtIO drivers</a> >
 <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/stable-virtio/virtio-win.iso">Stable</a> |
 <a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso">Latest</a>
+
   <br><br>
 </p>
 
