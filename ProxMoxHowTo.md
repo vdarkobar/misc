@@ -232,20 +232,20 @@ Post-installation
 
 CATEGORY		OPTION			VALUE
 ```
-OS			    Guest OS		Microsoft Windows (10/Server)
+OS			Guest OS		Microsoft Windows (10/Server)
 			      CD image		Your downloaded ISO
 
 System			Graphics card		Default
-			      SCSI Controller		VirtIO SCSI
-			      Qemu Agent		Enabled
+			      SCSI Controller	VirtIO SCSI
+			      Qemu Agent	Enabled
 
 Hard Disk		Bus/Device		VirtIO Block (0)
 			      Disk Size		>50GB ideally
-			      Cache			Write Through
+			      Cache		Write Through
 
-CPU			    Sockets			1 (adjust to your needs)
-			      Cores			4 (adjust to your needs)
-			      Type			host
+CPU			Sockets			1 (adjust to your needs)
+			      Cores		4 (adjust to your needs)
+			      Type		host
 
 Memory			Memory			8192 (adjust to your liking)
 Network			Model			VirtIO (paravirtualized)
