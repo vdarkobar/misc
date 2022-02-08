@@ -205,24 +205,30 @@ tail -f /var/log/apcupsd.events
   <br><br>
 </p>
 
-Pre-installation
-	-NetKVM — the VirtIO Ethernet driver
-	-viostor — the VirtIO block storage driver
-	-vioscsi — the VirtIO SCSI driver
-	-qxldod — QXL graphics driver (if installing Windows 7 or earlier, choose qxl instead)		
-Post-installation
-	-Balloon — VirtIO memory balloon driver (optional, but recommended unless your server has plenty of RAM)
-	#Copy folder> D:\Balloon\w10\amd64 to C:\Program Files and rename it to: Balloon
-	#Open CMD as Administrator, CD to C:\Program Files\Balloon> and run command: blnsvr.exe -i
-	-guest-agent
-
-## VM
-  
+VM
+```
 - virtual hard disk > 			"SCSI"  Set  as  for best performance  and tick
 - controller > 				"VirtIO SCSI"
 - cache option > 			"Write Through" (explanation: https://medium.com/@carll/installing-server-2016-2019-core-gui-less-with-proxmox-649ba8d634db)
 
 - !!! for TRIM option tick !!! > 	"Discard" (to optimally use disk space)
+```
+  
+Pre-installation
+```
+	-NetKVM — the VirtIO Ethernet driver
+	-viostor — the VirtIO block storage driver
+	-vioscsi — the VirtIO SCSI driver
+	-qxldod — QXL graphics driver (if installing Windows 7 or earlier, choose qxl instead)
+```
+Post-installation
+```
+	-Balloon — VirtIO memory balloon driver (optional, but recommended unless your server has plenty of RAM)
+	#Copy folder> D:\Balloon\w10\amd64 to C:\Program Files and rename it to: Balloon
+	#Open CMD as Administrator, CD to C:\Program Files\Balloon> and run command: blnsvr.exe -i
+	-guest-agent
+```
+  
 
 CATEGORY		OPTION			VALUE
 
