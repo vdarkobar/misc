@@ -12,7 +12,7 @@ sudo nano /home/<USER>/NextCloud/files/config/config.php
 'overwrite.cli.url' => 'https://example.com', 'overwritehost' => 'example.com', 'overwriteprotocol' => 'https',
 # or (if using subdomain):
 'overwrite.cli.url' => 'https://subdomain.example.com', 'overwritehost' => 'subdomain.example.com', 'overwriteprotocol' => 'https',
-
+# or:
 'overwrite.cli.url' => 'https://cloud.home-network.me',
 'overwritehost' => 'cloud.home-network.me',
 'overwriteprotocol' => 'https',
