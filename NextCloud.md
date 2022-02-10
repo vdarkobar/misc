@@ -51,3 +51,9 @@ Enter *Collabora* - Document Server url (*no Port Number needed*):
 <p align="center">
   <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
 </p>
+  
+Setup SMTP server for gmail:
+  
+<p align="center">
+  <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
+</p>
