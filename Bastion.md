@@ -16,6 +16,7 @@ sudo apt install -y \
   git \
   curl \
   wget \
+  rsync \
   gnupg2 \
   fail2ban \
   net-tools \
