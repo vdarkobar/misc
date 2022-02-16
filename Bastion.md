@@ -221,6 +221,12 @@ Copy ID (*public.key*) to <a href="https://github.com/vdarkobar/shared/blob/main
 ```
 ssh-copy-id -i ~/.ssh/id_ed25519.pub user@ip
 ```
+  
+Copy file with *rsync*
+```
+sudo rsync -az acme.json  darko@192.168.1.30:~/
+```
+  
 ```
 ssh user@ip
 ```
