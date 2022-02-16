@@ -50,6 +50,7 @@ sudo apt install -y \
   ufw \
   wget \
   curl \
+  rsync \
   gnupg2 \
   fail2ban \
   cloud-init \
@@ -70,6 +71,7 @@ sudo apt install -y \
   ufw \
   wget \
   curl \
+  rsync \
   gnupg2 \
   fail2ban \
   cloud-init \
