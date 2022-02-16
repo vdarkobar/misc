@@ -25,6 +25,11 @@ Write changes to the disk > Yes > Continue
 ```
 ssh-copy-id -i ~/.ssh/id_ed25519.pub user@ip
 ```
+Copy file with *rsync*:
+```
+sudo rsync -az file.name  user@ip:~/
+```
+  
 Test: SSH to VM:
 ```
 ssh user@ip
