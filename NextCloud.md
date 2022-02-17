@@ -51,6 +51,11 @@ Enter *Collabora* - Document Server url (*no Port Number needed*):
 <p align="center">
   <img src="https://github.com/vdarkobar/shared/blob/main/Collabora.webp">
 </p>
+
+Colabora Admin interface (username admin):
+```
+https://yourdomain.tld/loleaflet/dist/admin/admin.html
+```
   
 #### Setup SMTP server for gmail (use App-passwords option if 2fa is enabled on the account):
   
