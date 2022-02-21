@@ -57,6 +57,7 @@ sudo apt install -y \
   curl \
   rsync \
   gnupg2 \
+  argon2 \
   fail2ban \
   cloud-init \
   bash-completion \
@@ -78,6 +79,7 @@ sudo apt install -y \
   curl \
   rsync \
   gnupg2 \
+  argon2 \
   fail2ban \
   cloud-init \
   lsb-release \
