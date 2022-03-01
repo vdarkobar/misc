@@ -230,7 +230,7 @@ Post-installation
 ```
   
 
-CATEGORY		OPTION			VALUE
+CATEGORY / OPTION / VALUE
 ```
 OS			Guest OS		Microsoft Windows (10/Server)
 			      CD image		Your downloaded ISO
